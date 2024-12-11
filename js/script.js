@@ -10,6 +10,45 @@ document.getElementById('donate-noakhali').addEventListener('click', function(){
     setInnerText('main-balance', debited);
 
     document.getElementById('noakhali-input').value = "";
+
+    // bd time and date 
+    const options = { 
+        timeZone: "Asia/Dhaka", 
+        year: "numeric", 
+        month: "2-digit", 
+        day: "2-digit", 
+        hour: "2-digit", 
+        minute: "2-digit", 
+        second: "2-digit" 
+    };
+    // the transition section codes here 
+    const div = document.createElement('div');
+    div.classList.add("border")
+    div.classList.add("p-4")
+    div.classList.add("my-3")
+
+    const h1 = document.createElement('h1');
+    h1.classList.add('text-lg');
+    h1.classList.add('font-semibold');
+    h1.classList.add('mb-2');
+
+    const p = document.createElement('p');
+    p.classList.add('text-[#111111B2]');
+
+    h1.innerText = `${donateValue} Taka is Donated for  Flood Relief in Noakhali,Bangladesh`;
+
+
+    const bdTimeAndDate = new Date().toLocaleString("en-US", options,);
+
+
+
+    p.append(bdTimeAndDate);
+    div.appendChild(h1);
+    div.appendChild(p);
+
+    document.getElementById('comment-section').appendChild(div);
+
+
 })
 document.getElementById('donate-feni').addEventListener('click', function(){
     const donateValue = getNumberFromInput('feni-input');
