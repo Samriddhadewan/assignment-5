@@ -1,14 +1,17 @@
 const modal = document.getElementById("my_modal_1");
 
 document.getElementById('donate-noakhali').addEventListener('click', function(event){
+
+    const mainBalance = getNumberFromStr('main-balance');
     const donateValue = getNumberFromInput('noakhali-input');
-    if(isNaN(donateValue) || donateValue <= 0){
+
+    if(isNaN(donateValue) || donateValue <= 0 || donateValue > mainBalance){
         alert("Please enter valid Amount");
-        document.getElementById('noakhali-input').value = '';
+        document.getElementById('injury-input').value = '';
         modal.classList.add('hidden');
         return;
     }
-    const mainBalance = getNumberFromStr('main-balance');
+
     const deposit = getNumberFromStr('noakhali-amount');
     
 
@@ -71,14 +74,14 @@ document.getElementById('donate-feni').addEventListener('click', function(){
     const deposit = getNumberFromStr('feni-amount');
 
         
-    if(isNaN(donateValue) || donateValue <= 0){
+    if(isNaN(donateValue) || donateValue <= 0 || donateValue > mainBalance){
         alert("Please enter valid Amount");
-        document.getElementById('feni-input').value = '';
+        document.getElementById('injury-input').value = '';
         modal.classList.add('hidden');
         return;
     }
 
-    
+
     const debited = mainBalance - donateValue;
     const NewDeposit = deposit + donateValue;
 
@@ -125,11 +128,6 @@ div.appendChild(p);
 document.getElementById('comment-section').appendChild(div);
 })
 
-
-
-
-
-
 // injury box 
 
 document.getElementById('donate-injury').addEventListener('click', function(){
@@ -138,13 +136,12 @@ document.getElementById('donate-injury').addEventListener('click', function(){
     const deposit = getNumberFromStr('injuy-amount');
 
         
-    if(isNaN(donateValue) || donateValue <= 0){
+    if(isNaN(donateValue) || donateValue <= 0 || donateValue > mainBalance){
         alert("Please enter valid Amount");
         document.getElementById('injury-input').value = '';
         modal.classList.add('hidden');
         return;
     }
-
     const debited = mainBalance - donateValue;
     const NewDeposit = deposit + donateValue;
 
