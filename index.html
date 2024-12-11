@@ -43,7 +43,7 @@
     </header>
     <!-- header section ends here  -->
     <main>
-        <section class="container mx-auto">
+        <section id="donation-section" class="container mx-auto">
             <!-- box 1  -->
             <div class="flex flex-col sm:flex-row  gap-8 justify-between items-center border p-5 rounded-xl">
                 <div class="flex-1">
@@ -89,7 +89,7 @@
                     <h1 class="text-xl font-bold text-[#111] my-4">Aid for Injured in the Quota Movement</h1>
                     <p class="text-[#111111B2] font-light text-base "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input class="border text-base font-light rounded-lg pl-3 text h-14 w-full my-6" type="text" name="" id="injury-input" placeholder="Write Donation Amount">
-                    <button id="donate-injury" class="btn  bg-[#B4F461] text-[#111] px-8 pb-10 pt-3 text-xl font-semibold rounded-lg w-full  " onclick="my_modal_1.showModal()">Donate Now</button>
+                    <button id="donate-injury" class="btn  bg-[#B4F461] text-[#111] px-8 pb-10 pt-3 text-xl font-semibold rounded-lg w-full  " onclick="my_modal_1.showModal();">Donate Now</button>
                     <dialog id="my_modal_1" class="modal">
                     <div class="modal-box text-center">
                     <h3 class="text-3xl font-bold">Congrats</h3>
@@ -110,15 +110,15 @@
             </div>
         </section>
         <!-- the tansition section  -->
-         <section class="container mx-auto">
+         <section id="transition-section" class="container mx-auto">
             <div id="comment-section">
-                
+
             </div>
          </section>
     </main>
     <footer class="h-[10vh] bg-[#F9F7F3] mt-20">
     </footer>
-    
+    <script src="./js/toggle.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/script.js"></script>
 </body>
