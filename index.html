@@ -23,7 +23,7 @@
             <!-- nav section starts here -->
             <section class="flex container mx-auto justify-around">
                 <div>
-                    <button class="bg-[#B4F461] transition-transform duration-300 hover:scale-105 px-8 py-3 text-xs lg:text-xl font-semibold rounded-lg">Blog</button>
+                    <button id="blog-btn" class="bg-[#B4F461] transition-transform duration-300 hover:scale-105 px-8 py-3 text-xs lg:text-xl font-semibold rounded-lg">Blog</button>
                 </div>
                 <div class="flex items-center gap-3"> 
                     <img  class="" src="./assets/logo.png" alt="">
@@ -114,6 +114,43 @@
             <div id="comment-section">
 
             </div>
+         </section>
+         <section id="blog-section" class="container hidden mx-auto">
+            <h2 class="text-7xl mb-6+
+             font-semibold text-[#111]">Important FAQ </h2>
+            <!-- accordian section  -->
+            <div class="collapse bg-base-200">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)</div>
+                <div class="collapse-content">
+                  <p>
+                    DOM stands for Document Object Model. It is a programming interface for web documents that represents the structure of a web page in a tree-like format. It allows programs to dynamically access, update, and manipulate the content, structure, and styles of a webpage.</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">How do you select An Element in DOM
+                </div>
+                <div class="collapse-content">
+                  <p>Selecting DOM elements is key to dynamic web development. JavaScript provides methods like getElementById, getElementsByClassName, querySelector, and querySelectorAll to target elements by ID, class, tag, or CSS selectors efficiently for manipulation.
+                </p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation uses a parent element to manage events for its children. It reduces memory usage, simplifies code, and handles dynamically added elements efficiently by leveraging event bubbling to capture events on a common ancestor.</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element attribute and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>To update styles, access the style property of an element. For instance, element.style.color = 'blue' changes the text color, and element.style.backgroundColor = 'yellow' sets the background color. For complex styling, adding or removing CSS classes with classList.add() or classList.remove() is highly effective and keeps the styling consistent.
+                    By mastering these techniques, developers can create dynamic, responsive, and interactive web applications.</p>
+                </div>
+              </div>
          </section>
     </main>
     <footer class="h-[10vh] bg-[#F9F7F3] mt-20">

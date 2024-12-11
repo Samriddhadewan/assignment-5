@@ -17,4 +17,6 @@ document.getElementById('donation-section-btn').addEventListener('click', functi
     document.getElementById('transition-section-btn').classList.remove('font-bolder');
 
 })
-
+document.getElementById('blog-btn').addEventListener('click', function(){
+    showSectionByIdName('blog-section')
+})
