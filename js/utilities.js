@@ -11,3 +11,10 @@ function getNumberFromInput(id){
 function setInnerText(id,value){
     document.getElementById(id).innerText = value;
 }
+function showSectionByIdName(id){
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('transition-section').classList.add('hidden');
+    // show the section 
+    document.getElementById(id).classList.remove('hidden');
+
+}
